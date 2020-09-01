@@ -3,7 +3,11 @@
     <script>
         function hi()
         {           
-            document.getElementById("txtDiceVal").value =Math.floor(Math.random()*6)+1;
+            var DiceValue;
+            DiceValue = Math.floor(Math.random()*6)+1
+            //document.writeln(DiceValue);
+            document.getElementById("txtDiceValue").value = DiceValue;
+            
 
             //alert ('Hi');
         }
@@ -16,9 +20,11 @@
 <body>
 
 
-    <input type="text" id="txtDiceVal"   />  
+    <input type="text" id="txtDiceValue"   />  
     <br/>
     <input type ="button" id="btnHi" value="Dice !" onclick= "hi();"></input>    
 
 </body>
 </html>
+
+<!--vscode://vscode.github-authentication/did-authenticate?windowId=1&code=9f5eb9ab50c678bbcbe7&state=7e0be7d6-b395-41be-997b-3fb57b55d8cd-->
